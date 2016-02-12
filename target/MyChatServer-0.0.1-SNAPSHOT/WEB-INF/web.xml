@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<filter>
+		<filter-name>ProjectFilter</filter-name>
+		<filter-class>com.gl.mychat.servlets.ProjectFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ProjectFilter</filter-name>
+		<url-pattern>/servlet/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.gl.mychat.servlets.UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/servlet/UserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FriendServlet</servlet-name>
+		<servlet-class>com.gl.mychat.servlets.FriendServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FriendServlet</servlet-name>
+		<url-pattern>/servlet/FriendServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MessageServlet</servlet-name>
+		<servlet-class>com.gl.mychat.servlets.MessageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MessageServlet</servlet-name>
+		<url-pattern>/servlet/MessageServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TimelineServlet</servlet-name>
+		<servlet-class>com.gl.mychat.servlets.TimelineServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TimelineServlet</servlet-name>
+		<url-pattern>/servlet/TimelineServlet</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>com.gl.mychat.servlets.ProjectInit</listener-class>
+	</listener>
+</web-app>

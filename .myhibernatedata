@@ -1,0 +1,21 @@
+#MyEclipse Hibernate Properties
+#Fri Feb 05 18:25:27 CST 2016
+genBasicCompId=false
+sessionFactoryName=com.gl.mychat.sessionfactory.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=sequence
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/MyChatServer/hibernate.reveng.xml
+configFile=/MyChatServer/src/hibernate.cfg.xml
+createConfigFile=true
+baseDaoClass=BaseHibernateDAO
